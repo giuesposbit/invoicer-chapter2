@@ -233,7 +233,7 @@ func getHeartbeat(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("I am alive"))
 }
 
-// handleVersion returns the current version of the API
+// handleVersion returns the current version of the API ecco commento di variazione
 func getVersion(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(fmt.Sprintf(`{
 "source": "https://github.com/Securing-DevOps/invoicer",
