@@ -6,7 +6,7 @@ jobs:
   working_directory: /go/src/github.com/giuesposbit/invoicer-chapter2
   docker:
    - image: circleci/golang:1.10
-  steps:
+  steps: 
    - checkout
    - setup_remote_docker
 
