@@ -53,7 +53,7 @@ func main() {
 	iv.db.AutoMigrate(&Invoice{}, &Charge{})
 	iv.db.LogMode(true)
 
-	// register routes
+	// register routes - rebuild test
 	r := mux.NewRouter()
 	r.HandleFunc("/__heartbeat__", getHeartbeat).Methods("GET")
 	r.HandleFunc("/invoice/{id:[0-9]+}", iv.getInvoice).Methods("GET")
